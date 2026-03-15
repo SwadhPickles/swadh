@@ -1,0 +1,422 @@
+body{
+
+margin:0;
+font-family:Poppins, sans-serif;
+background:#fff7e6;
+
+}
+
+header {
+    height: 90vh;
+    background: url(assests/header.png);
+    background-size: cover;
+    background-color: #D59907;
+    color: white;
+}
+
+.nav{
+
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:20px 60px;
+
+}
+
+.brand{
+font-size:5px;
+font-weight:200;
+margin-left:8px;
+}
+
+.logo{
+
+height:70px;
+
+opacity: 0;
+
+
+
+}
+
+ul{
+
+list-style:none;
+display:flex;
+gap:30px;
+
+}
+
+ul a{
+
+color:white;
+text-decoration:none;
+font-weight:500;
+
+}
+
+.hero{
+
+text-align:center;
+margin-top:150px;
+
+}
+
+.hero h1{
+
+font-size:60px;
+
+}
+
+.btn{
+
+background:#ff5722;
+padding:12px 30px;
+color:white;
+text-decoration:none;
+border-radius:5px;
+
+}
+
+section{
+
+padding:70px 100px;
+text-align:center;
+
+}
+
+.grid{
+display:grid;
+grid-template-columns: repeat(2, 1fr);
+
+}
+
+@media (max-width:768px){
+.grid{
+grid-template-columns:1fr;
+}
+}
+
+.card{
+
+background:white;
+border-radius:10px;
+box-shadow:0 10px 20px rgba(0,0,0,0.15);
+padding:50px;
+
+}
+
+.card img{
+
+width:100%;
+height:200px;
+object-fit:cover;
+
+}
+
+.menu-grid{
+
+display:grid;
+grid-template-columns:repeat(2,1fr);
+gap:15px;
+font-size:20px;
+
+}
+
+.promise{
+
+background:#ffe0b2;
+padding:30px;
+margin:30px auto;
+max-width:400px;
+border-radius:10px;
+
+}
+
+footer{
+
+background:#fde4cf;;
+color:white;
+padding:20px;
+color:black;
+
+}
+
+/* Tablets */
+@media (max-width: 1024px){
+
+section{
+padding:50px 40px;
+}
+
+.hero h1{
+font-size:45px;
+}
+
+.nav{
+padding:20px 30px;
+}
+
+}
+
+
+/* Mobile Phones */
+@media (max-width: 768px){
+
+.nav{
+flex-direction:column;
+gap:15px;
+text-align:center;
+}
+
+ul{
+flex-direction:column;
+gap:10px;
+padding:0;
+}
+
+.hero{
+margin-top:80px;
+padding:20px;
+}
+
+.hero h1{
+font-size:36px;
+}
+
+.hero p{
+font-size:16px;
+}
+
+section{
+padding:50px 25px;
+}
+
+.grid{
+grid-template-columns:1fr;
+}
+
+.menu-grid{
+grid-template-columns:1fr;
+}
+
+.card img{
+height:180px;
+}
+
+}
+
+
+/* Small Phones */
+@media (max-width: 480px){
+
+.logo{
+height:50px;
+
+}
+
+@media (max-width:768px){
+.grid{
+grid-template-columns:1fr;
+}
+}
+
+section:nth-child(even){
+background:#FFF8F0;
+}
+
+.hero h1{
+font-size:28px;
+}
+
+.hero p{
+font-size:14px;
+}
+
+.btn{
+padding:10px 20px;
+font-size:14px;
+}
+
+.menu-grid{
+font-size:18px;
+}
+
+.promise{
+padding:20px;
+}
+
+}
+
+.social{
+
+text-align:center;
+padding:60px 20px;
+background:#fff3e0;
+
+}
+
+.social-links{
+
+display:flex;
+justify-content:center;
+gap:25px;
+flex-wrap:wrap;
+
+}
+
+.social-btn{
+
+display:flex;
+align-items:center;
+gap:10px;
+padding:12px 20px;
+border-radius:8px;
+color:white;
+text-decoration:none;
+font-weight:500;
+
+}
+
+.whatsapp{
+background:#25D366;
+}
+
+.instagram{
+background:#E1306C;
+}
+
+.email{
+background:#d44638;
+}
+
+.social-btn:hover{
+opacity:0.85;
+}
+
+.menu-section{
+padding:70px 100px;
+}
+
+html{
+scroll-behavior:smooth;
+scroll-padding-top:90px;
+}
+
+/* hidden state */
+.reveal{
+opacity:0;
+transform: translateY(40px);
+transition: all 0.8s ease;
+}
+
+/* visible state */
+.reveal.active{
+opacity:1;
+transform: translateY(0);
+}
+
+.card{
+transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover{
+transform: translateY(-8px);
+box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+}
+
+.card img{
+width:100%;
+height:220px;
+object-fit:cover;
+border-radius:10px 10px 0 0;
+}
+
+section{
+padding:80px 20px;
+}
+
+section:nth-child(even){
+background:#faf6ed;
+}
+
+h2{
+font-size:32px;
+margin-bottom:40px;
+text-align:center;
+
+}
+
+.btn{
+background:#c62828;
+color:white;
+padding:12px 28px;
+border-radius:30px;
+text-decoration:none;
+font-weight:500;
+transition:0.3s;
+}
+
+.btn:hover{
+background:#a61d1d;
+}
+
+.social-btn{
+transition: transform 0.2s ease;
+}
+
+.social-btn:hover{
+transform:scale(1.1);
+}
+
+.card{
+opacity:0;
+transform:translateY(40px);
+animation:fadeUp 0.8s ease forwards;
+}
+
+@keyframes fadeUp{
+to{
+opacity:1;
+transform:translateY(0);
+}
+}
+
+@media(max-width:768px){
+
+.grid{
+grid-template-columns:1fr;
+}
+
+.hero h1{
+font-size:28px;
+}
+
+}
+
+.card{
+
+   background-color: #fde4cf;
+}
+
+
+
+.card{
+transition: transform 0.3s ease, box-shadow 0.3s ease;
+border-radius:12px;
+overflow:hidden;
+}
+
+.card:hover{
+transform: translateY(-8px) scale(1.02);
+box-shadow: 0 15px 30px rgba(0,0,0,0.15);
+}
+
+.card img{
+transition: transform 0.4s ease;
+}
+
+.card:hover img{
+transform: scale(1.08);
+}
+
