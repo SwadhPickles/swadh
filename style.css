@@ -6,6 +6,10 @@ background:#fff7e6;
 
 }
 
+.temp{
+    font-size: 60px;
+}
+
 header {
     height: 90vh;
     background: url(assests/header.png);
@@ -88,6 +92,7 @@ text-align:center;
 .grid{
 display:grid;
 grid-template-columns: repeat(2, 1fr);
+gap: 20px;
 
 }
 
@@ -103,6 +108,7 @@ background:white;
 border-radius:10px;
 box-shadow:0 10px 20px rgba(0,0,0,0.15);
 padding:50px;
+
 
 }
 
@@ -133,12 +139,14 @@ border-radius:10px;
 
 }
 
+
+
 footer{
 
 background:#fde4cf;;
-color:white;
-padding:20px;
 color:black;
+padding:20px;
+
 
 }
 
